@@ -1,0 +1,48 @@
+/*Noto Sans JPフォントをインポート*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+p{
+  margin: unset;
+}
+.wrapper{
+  padding: 12px;
+}
+.title p{
+  font-size: 22px;
+  font-weight: 900;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.flexbox{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+.container{
+  width: 25%;
+}
+.article{
+  background-color: white;
+  margin:20px;
+  border-radius: 4px;
+}
+p.article__title{
+  font-style: 18px;
+  font-weight: 900;
+  padding:10px 12px;
+}
+p.article__detail{
+  font-size:13px;
+  line-height: 19px;
+  padding:10px 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .flexbox{
+    display:block;
+  }
+  .container{
+    width:100%;
+  }
+  .article{
+    margin:unset;
+  }
+}

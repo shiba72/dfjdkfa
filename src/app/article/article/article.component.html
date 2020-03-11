@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="title">
+    <p>投稿一覧</p>
+  </div>
+  <div class="flexbox">
+    <!--これで一つ記事-->
+    <div class="container" *ngFor="let article of articles">
+      <div class="article">
+        <div class="article__photo">
+          <img src="{{article.image.url}}" style="width:100%;height:auto;border-radius:4px 4px 0px 0px;">
+        </div>
+        <p class="article__title">{{article.title}}</p>
+        <p class="article__detail">{{article.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--footer-->
